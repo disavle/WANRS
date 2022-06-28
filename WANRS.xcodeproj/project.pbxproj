@@ -52,13 +52,37 @@
 		0C292025286B681500E3F023 /* WANRS */ = {
 			isa = PBXGroup;
 			children = (
+				0C29203B286B6EEB00E3F023 /* App */,
+				0C29203C286B6EF400E3F023 /* View */,
+				0C29203D286B6F0000E3F023 /* Info */,
+			);
+			path = WANRS;
+			sourceTree = "<group>";
+		};
+		0C29203B286B6EEB00E3F023 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				0C292026286B681500E3F023 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0C29203C286B6EF400E3F023 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				0C29202A286B681500E3F023 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C29203D286B6F0000E3F023 /* Info */ = {
+			isa = PBXGroup;
+			children = (
 				0C29202F286B681700E3F023 /* Assets.xcassets */,
 				0C292031286B681700E3F023 /* LaunchScreen.storyboard */,
 				0C292034286B681700E3F023 /* Info.plist */,
 			);
-			path = WANRS;
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +297,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7P93X87YPP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WANRS/Info.plist;
+				INFOPLIST_FILE = WANRS/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -302,10 +325,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7P93X87YPP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WANRS/Info.plist;
+				INFOPLIST_FILE = WANRS/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
