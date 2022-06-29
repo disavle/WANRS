@@ -11,6 +11,7 @@
 		0C29202B286B681500E3F023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29202A286B681500E3F023 /* ViewController.swift */; };
 		0C292030286B681700E3F023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C29202F286B681700E3F023 /* Assets.xcassets */; };
 		0C292033286B681700E3F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C292031286B681700E3F023 /* LaunchScreen.storyboard */; };
+		BEF67141C2DCBAC241A2CFB4 /* Pods_WANRS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		0C29202F286B681700E3F023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C292032286B681700E3F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C292034286B681700E3F023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32422F383AF9D1E0150D474D /* Pods-WANRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.release.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.release.xcconfig"; sourceTree = "<group>"; };
+		654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WANRS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F99D31EED1511BEEB421474 /* Pods-WANRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.debug.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF67141C2DCBAC241A2CFB4 /* Pods_WANRS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				0C292025286B681500E3F023 /* WANRS */,
 				0C292024286B681500E3F023 /* Products */,
+				59784ED6B386A4CFD3344C7A /* Pods */,
+				752BE8D71EAA90A1F4E2CFF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,23 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
+		59784ED6B386A4CFD3344C7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F99D31EED1511BEEB421474 /* Pods-WANRS.debug.xcconfig */,
+				32422F383AF9D1E0150D474D /* Pods-WANRS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		752BE8D71EAA90A1F4E2CFF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C292037286B681700E3F023 /* Build configuration list for PBXNativeTarget "WANRS" */;
 			buildPhases = (
+				0CB68602286C60BE00CE83E2 /* ShellScript */,
+				93BB470C68E34507496E7C91 /* [CP] Check Pods Manifest.lock */,
 				0C29201F286B681500E3F023 /* Sources */,
 				0C292020286B681500E3F023 /* Frameworks */,
 				0C292021286B681500E3F023 /* Resources */,
+				29D72EC4CD4ED8D876014669 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB68602286C60BE00CE83E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		29D72EC4CD4ED8D876014669 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WANRS/Pods-WANRS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WANRS/Pods-WANRS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WANRS/Pods-WANRS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BB470C68E34507496E7C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WANRS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C29201F286B681500E3F023 /* Sources */ = {
@@ -290,6 +376,7 @@
 		};
 		0C292038286B681700E3F023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F99D31EED1511BEEB421474 /* Pods-WANRS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +405,7 @@
 		};
 		0C292039286B681700E3F023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32422F383AF9D1E0150D474D /* Pods-WANRS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
