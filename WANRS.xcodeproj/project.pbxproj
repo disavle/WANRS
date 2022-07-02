@@ -11,6 +11,7 @@
 		0C29202B286B681500E3F023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29202A286B681500E3F023 /* ViewController.swift */; };
 		0C292030286B681700E3F023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C29202F286B681700E3F023 /* Assets.xcassets */; };
 		0C292033286B681700E3F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C292031286B681700E3F023 /* LaunchScreen.storyboard */; };
+		0CB68604286C659000CE83E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CB68603286C659000CE83E2 /* GoogleService-Info.plist */; };
 		BEF67141C2DCBAC241A2CFB4 /* Pods_WANRS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		0C29202F286B681700E3F023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C292032286B681700E3F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C292034286B681700E3F023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB68603286C659000CE83E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32422F383AF9D1E0150D474D /* Pods-WANRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.release.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.release.xcconfig"; sourceTree = "<group>"; };
 		654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WANRS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F99D31EED1511BEEB421474 /* Pods-WANRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.debug.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0C29202F286B681700E3F023 /* Assets.xcassets */,
 				0C292031286B681700E3F023 /* LaunchScreen.storyboard */,
 				0C292034286B681700E3F023 /* Info.plist */,
+				0CB68603286C659000CE83E2 /* GoogleService-Info.plist */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -116,8 +119,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C292037286B681700E3F023 /* Build configuration list for PBXNativeTarget "WANRS" */;
 			buildPhases = (
-				0CB68602286C60BE00CE83E2 /* ShellScript */,
 				93BB470C68E34507496E7C91 /* [CP] Check Pods Manifest.lock */,
+				0CB68602286C60BE00CE83E2 /* ShellScript */,
 				0C29201F286B681500E3F023 /* Sources */,
 				0C292020286B681500E3F023 /* Frameworks */,
 				0C292021286B681500E3F023 /* Resources */,
@@ -172,6 +175,7 @@
 			files = (
 				0C292033286B681700E3F023 /* LaunchScreen.storyboard in Resources */,
 				0C292030286B681700E3F023 /* Assets.xcassets in Resources */,
+				0CB68604286C659000CE83E2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +280,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -336,7 +340,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
