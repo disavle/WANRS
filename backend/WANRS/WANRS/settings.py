@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'admin',
-        'HOST': 'db', # Run local server without docker 'localhost'
+        'HOST': 'host.docker.internal', # Run local server without docker 'localhost'
         'PORT': '5432',
     }
 }
