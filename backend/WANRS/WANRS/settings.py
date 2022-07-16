@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api.apps.ApiConfig',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'admin',
-        'HOST': 'host.docker.internal', # Run local server without docker 'localhost'
+        'HOST': 'host.docker.internal',  # Run local server without docker 'localhost'
         'PORT': '5432',
     }
 }
