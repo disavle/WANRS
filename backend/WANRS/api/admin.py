@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Post
+from .models import Card, CardType
 
 
-admin.site.register(Post)
+admin.site.register(Card)
+admin.site.register(CardType)

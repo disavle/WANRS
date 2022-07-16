@@ -1,26 +1,25 @@
+import random
+
+from django_filters import FilterSet
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import generics
 from . import serializer
-from django.contrib.auth.models import User
-from .models import Post
+from .models import Card
 
+class OneCard(generics.RetrieveAPIView):
+    queryset = Card.objects.all()
+    serializer_class = serializer.CardSerializer
 
-class UserList(generics.ListAPIView):
-    queryset = User.objects.all()
-    serializer_class = serializer.UserSerializer
+class CardList(generics.ListAPIView):
+    queryset = Card.objects.all()
+    serializer_class = serializer.CardSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = {
+            'type': ['in','exact'],
+        }
 
+class RandomCard(generics.ListAPIView):
+    def get_queryset(self):
+        return Card.objects.all().filter(id=random.randrange(1, Card.objects.all().count() + 1))
+    serializer_class = serializer.CardSerializer
 
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = serializer.UserSerializer
-
-class PostList(generics.ListCreateAPIView):
-    queryset = Post.objects.all()
-    serializer_class = serializer.PostSerializer
-
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
-
-
-class PostDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Post.objects.all()
-    serializer_class = serializer.PostSerializer
