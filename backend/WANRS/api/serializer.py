@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Card
+from .models import Card, CardType
 
 
 class CardSerializer(serializers.ModelSerializer):
@@ -7,3 +7,8 @@ class CardSerializer(serializers.ModelSerializer):
     class Meta:
         model = Card
         fields = ['id', 'text', 'type']
+
+class CardTypeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Card
+        fields = ['id', 'type']

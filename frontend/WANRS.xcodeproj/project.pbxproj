@@ -8,21 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		0C292027286B681500E3F023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C292026286B681500E3F023 /* AppDelegate.swift */; };
-		0C29202B286B681500E3F023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29202A286B681500E3F023 /* ViewController.swift */; };
+		0C29202B286B681500E3F023 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29202A286B681500E3F023 /* MainViewController.swift */; };
 		0C292030286B681700E3F023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C29202F286B681700E3F023 /* Assets.xcassets */; };
 		0C292033286B681700E3F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C292031286B681700E3F023 /* LaunchScreen.storyboard */; };
-		0CB68604286C659000CE83E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CB68603286C659000CE83E2 /* GoogleService-Info.plist */; };
+		0C9A6C2528886D6500F55CA6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A6C2428886D6500F55CA6 /* Card.swift */; };
+		0C9A6C2728886EA100F55CA6 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A6C2628886EA100F55CA6 /* MainPresenter.swift */; };
+		0C9A6C292888725600F55CA6 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A6C282888725600F55CA6 /* CardType.swift */; };
+		0C9A6C2B2888804400F55CA6 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A6C2A2888804400F55CA6 /* ModuleBuilder.swift */; };
 		BEF67141C2DCBAC241A2CFB4 /* Pods_WANRS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C9A6C34288885CD00F55CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C29201B286B681500E3F023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C292022286B681500E3F023;
+			remoteInfo = WANRS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C292023286B681500E3F023 /* WANRS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WANRS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C292026286B681500E3F023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C29202A286B681500E3F023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C29202A286B681500E3F023 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0C29202F286B681700E3F023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C292032286B681700E3F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C292034286B681700E3F023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CB68603286C659000CE83E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C9A6C2428886D6500F55CA6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0C9A6C2628886EA100F55CA6 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		0C9A6C282888725600F55CA6 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		0C9A6C2A2888804400F55CA6 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		0C9A6C30288885CD00F55CA6 /* WANRSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WANRSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32422F383AF9D1E0150D474D /* Pods-WANRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.release.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.release.xcconfig"; sourceTree = "<group>"; };
 		654DDFA21BDB422FCE056F60 /* Pods_WANRS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WANRS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F99D31EED1511BEEB421474 /* Pods-WANRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WANRS.debug.xcconfig"; path = "Target Support Files/Pods-WANRS/Pods-WANRS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -34,6 +51,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF67141C2DCBAC241A2CFB4 /* Pods_WANRS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C9A6C2D288885CD00F55CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0C292023286B681500E3F023 /* WANRS.app */,
+				0C9A6C30288885CD00F55CA6 /* WANRSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0C29203B286B6EEB00E3F023 /* App */,
-				0C29203C286B6EF400E3F023 /* View */,
+				0C9A6C2128886CBA00F55CA6 /* MainModule */,
 				0C29203D286B6F0000E3F023 /* Info */,
 			);
 			path = WANRS;
@@ -72,16 +97,17 @@
 			isa = PBXGroup;
 			children = (
 				0C292026286B681500E3F023 /* AppDelegate.swift */,
+				0C9A6C2A2888804400F55CA6 /* ModuleBuilder.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		0C29203C286B6EF400E3F023 /* View */ = {
+		0C29203C286B6EF400E3F023 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0C29202A286B681500E3F023 /* ViewController.swift */,
+				0C29202A286B681500E3F023 /* MainViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0C29203D286B6F0000E3F023 /* Info */ = {
@@ -90,9 +116,35 @@
 				0C29202F286B681700E3F023 /* Assets.xcassets */,
 				0C292031286B681700E3F023 /* LaunchScreen.storyboard */,
 				0C292034286B681700E3F023 /* Info.plist */,
-				0CB68603286C659000CE83E2 /* GoogleService-Info.plist */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		0C9A6C2128886CBA00F55CA6 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A6C2328886CE400F55CA6 /* Presenters */,
+				0C9A6C2228886CDC00F55CA6 /* Models */,
+				0C29203C286B6EF400E3F023 /* Views */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		0C9A6C2228886CDC00F55CA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A6C2428886D6500F55CA6 /* Card.swift */,
+				0C9A6C282888725600F55CA6 /* CardType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C9A6C2328886CE400F55CA6 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A6C2628886EA100F55CA6 /* MainPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		59784ED6B386A4CFD3344C7A /* Pods */ = {
@@ -135,6 +187,24 @@
 			productReference = 0C292023286B681500E3F023 /* WANRS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0C9A6C2F288885CD00F55CA6 /* WANRSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9A6C36288885CD00F55CA6 /* Build configuration list for PBXNativeTarget "WANRSTests" */;
+			buildPhases = (
+				0C9A6C2C288885CD00F55CA6 /* Sources */,
+				0C9A6C2D288885CD00F55CA6 /* Frameworks */,
+				0C9A6C2E288885CD00F55CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C9A6C35288885CD00F55CA6 /* PBXTargetDependency */,
+			);
+			name = WANRSTests;
+			productName = WANRSTests;
+			productReference = 0C9A6C30288885CD00F55CA6 /* WANRSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +217,10 @@
 				TargetAttributes = {
 					0C292022286B681500E3F023 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					0C9A6C2F288885CD00F55CA6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0C292022286B681500E3F023;
 					};
 				};
 			};
@@ -164,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				0C292022286B681500E3F023 /* WANRS */,
+				0C9A6C2F288885CD00F55CA6 /* WANRSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -175,7 +250,13 @@
 			files = (
 				0C292033286B681700E3F023 /* LaunchScreen.storyboard in Resources */,
 				0C292030286B681700E3F023 /* Assets.xcassets in Resources */,
-				0CB68604286C659000CE83E2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C9A6C2E288885CD00F55CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +326,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C29202B286B681500E3F023 /* ViewController.swift in Sources */,
+				0C29202B286B681500E3F023 /* MainViewController.swift in Sources */,
+				0C9A6C2528886D6500F55CA6 /* Card.swift in Sources */,
 				0C292027286B681500E3F023 /* AppDelegate.swift in Sources */,
+				0C9A6C292888725600F55CA6 /* CardType.swift in Sources */,
+				0C9A6C2728886EA100F55CA6 /* MainPresenter.swift in Sources */,
+				0C9A6C2B2888804400F55CA6 /* ModuleBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C9A6C2C288885CD00F55CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C9A6C35288885CD00F55CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C292022286B681500E3F023 /* WANRS */;
+			targetProxy = 0C9A6C34288885CD00F55CA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C292031286B681700E3F023 /* LaunchScreen.storyboard */ = {
@@ -436,6 +536,46 @@
 			};
 			name = Release;
 		};
+		0C9A6C37288885CD00F55CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P93X87YPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = disavle.WANRSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WANRS.app/WANRS";
+			};
+			name = Debug;
+		};
+		0C9A6C38288885CD00F55CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P93X87YPP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = disavle.WANRSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WANRS.app/WANRS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +593,15 @@
 			buildConfigurations = (
 				0C292038286B681700E3F023 /* Debug */,
 				0C292039286B681700E3F023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C9A6C36288885CD00F55CA6 /* Build configuration list for PBXNativeTarget "WANRSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C9A6C37288885CD00F55CA6 /* Debug */,
+				0C9A6C38288885CD00F55CA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

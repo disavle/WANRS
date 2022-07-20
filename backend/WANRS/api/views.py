@@ -4,7 +4,7 @@ from django_filters import FilterSet
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import generics
 from . import serializer
-from .models import Card
+from .models import Card, CardType
 
 class OneCard(generics.RetrieveAPIView):
     queryset = Card.objects.all()
@@ -22,4 +22,9 @@ class RandomCard(generics.ListAPIView):
     def get_queryset(self):
         return Card.objects.all().filter(id=random.randrange(1, Card.objects.all().count() + 1))
     serializer_class = serializer.CardSerializer
+
+class CardTypeList(generics.ListAPIView):
+    queryset = CardType.objects.all()
+    serializer_class = serializer.CardSerializer
+
 

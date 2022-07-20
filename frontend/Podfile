@@ -10,6 +10,5 @@ pod 'SnapKit'
 pod 'SwiftLint'
 pod 'Moya'
 pod 'Hero'
-pod 'FirebaseFirestore'
 
 end
