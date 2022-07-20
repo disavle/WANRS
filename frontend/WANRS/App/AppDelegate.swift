@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
         window = UIWindow()
-        let nav = UINavigationController(rootViewController: ViewController())
+        let nav = UINavigationController(rootViewController: ModelBuilder.createMainModule())
         nav.navigationBar.scrollEdgeAppearance = nav.navigationBar.standardAppearance
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
